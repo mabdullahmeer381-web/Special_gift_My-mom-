@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Wonderful Mom ❤️</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+        body { background-color: #0b0205; color: white; overflow-x: hidden; margin: 0; }
+        .dot-bg { background-image: radial-gradient(#331a1a 1px, transparent 1px); background-size: 25px 25px; }
+        .font-love { font-family: 'Dancing Script', cursive; }
+        .hidden { display: none; }
+        .rose-glow { text-shadow: 0 0 15px rgba(251, 113, 133, 0.8); }
+    </style>
+</head>
+<body class="dot-bg">
+
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="main-container" class="flex flex-col items-center justify-center min-h-screen p-6 text-center">
+        
+        <div id="screen1">
+            <img src="https://media.tenor.com/C7W9-f1E5-0AAAAAi/mother-and-child-bears.gif" class="w-40 h-40 mx-auto mb-6">
+            <h1 class="text-5xl font-love text-rose-400 mb-4 rose-glow">Hi Mom!</h1>
+            <p class="text-gray-400 mb-8 italic">I have a special surprise for you...</p>
+            <button onclick="startApp()" class="bg-rose-600 hover:bg-rose-500 px-12 py-4 rounded-full font-bold shadow-xl active:scale-95 transition-all">Open My Heart ❤️</button>
+        </div>
+
+        <div id="screen2" class="hidden w-full max-w-xs">
+            <h2 class="text-xl mb-6 tracking-[0.2em] uppercase text-rose-300">Measuring My Love...</h2>
+            <div class="w-full bg-gray-900 h-5 rounded-full border border-white/10 overflow-hidden shadow-inner">
+                <div id="bar" class="bg-gradient-to-r from-rose-500 to-orange-400 h-full w-0 transition-all duration-75"></div>
+            </div>
+            <p id="percent" class="mt-6 text-6xl font-mono text-rose-500 rose-glow">0%</p>
+        </div>
+
+        <div id="screen3" class="hidden w-full max-w-md space-y-6">
+            <h2 class="text-4xl font-love text-rose-300 mb-8 rose-glow">Love Overload! ❤️</h2>
+            
+            <div onclick="reveal(this)" class="p-6 bg-white/5 border border-rose-500/30 rounded-3xl cursor-pointer">
+                <span class="text-rose-200">The Meaning of "Mom" 🎁</span>
+                <p class="hidden text-2xl mt-3 font-love text-white">"A mother's love is the fuel that enables a normal human being to do the impossible."</p>
+            </div>
+
+
+          
